@@ -31,12 +31,13 @@ body{
 
 .nav-menu a{
     text-decoration:none;
-    color:#FF88BA;
+    color:white;
+    font-weight: bold;
     transition:0.3s;
 }
 
 .nav-menu a:hover{
-    color:#F13E93;
+    color:#f5caca;
 }
 
 main{
@@ -49,7 +50,7 @@ main{
 
 .welcome h1{
     margin-bottom:10px;
-    color: #FF88BA;
+    color: #92487A;
 }
 
 .cards{
@@ -60,14 +61,22 @@ main{
 
 .card{
     flex:1;
-    background:#f5caca;
+    background:#FFB6C1;
     padding:25px;
     border-radius:15px;
     box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .card h3{
-    color:#ff7eb6;
+    color:#E83C91;
+    font-weight: bold;
     margin-bottom:10px;
 }
 
@@ -78,7 +87,7 @@ main{
 }
 
 .table-container{
-    background:#FBC3C1;
+    background:#FFB6C1;
     padding:20px;
     border-radius:15px;
     box-shadow:0 2px 10px rgba(0,0,0,0.1);
@@ -89,7 +98,7 @@ main{
     justify-content:space-between;
     align-items:center;
     margin-bottom:20px;
-    color: #b04dd6;
+    color: #92487A;
 }
 
 .table-header button{
@@ -99,11 +108,13 @@ main{
     border:none;
     padding:12px 20px;
     border-radius:10px;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    cursor: pointer
 }
 
 .table-header button:hover{
     background:#9137b7;
+    transform: translateY(-5px);
 }
 
 table{
@@ -113,17 +124,90 @@ table{
 }
 
 th{
-    background:#B153D7;
+    background:#b04dd6;
     color:white;
     padding:12px;
     border: 1px solid #ddd;
 }
 
 td{
-    padding:12px;
+    padding:10px;
     border-bottom:1px solid #ddd;
 }
 
-tbody tr:hover{
-    background:beige;
+.edit{
+    background-color:#b04dd6;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+.hapus{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;;
+    transition: all 0.3s ease;
+}
+
+.edit:hover{
+    background-color: #9137b7;
+    transform: translateY(-5px);
+}
+
+.hapus:hover{
+    background-color: #cc0000;
+    transform: translateY(-5px);
+}
+.aksi-btn{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.id {
+    width: 20px;
+}
+
+.judul {
+    width: 250px;
+}
+
+.penulis {
+    width: 250px;
+}
+
+.kategori {
+    width: 200px;
+}
+
+.status {
+    width: 200px;
+}
+
+.stok {
+    width: 20px;
+}
+
+.tersedia {
+    color: green;
+    font-weight: bold;
+}
+
+.dipinjam{
+    color: red;
+    font-weight: bold   ;
+}
+
+.aksi {
+    width: 200px;
+}
+
