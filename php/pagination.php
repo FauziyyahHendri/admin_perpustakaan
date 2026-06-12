@@ -18,6 +18,7 @@ $query_data = mysqli_query(
     "SELECT * FROM data_buku
     WHERE judul LIKE '%$cari%'
     OR penulis LIKE '%$cari%'
+    OR kategori LIKE '%$cari%'
     ORDER BY id ASC
     LIMIT $halaman_awal, $batas"
 );
