@@ -26,6 +26,7 @@
             <option value="Novel">Novel</option>
             <option value="Pengembangan Diri">Pengembangan Diri</option>
             <option value="Pendidikan">Pendidikan</option>
+            <option value="Pendidikan">Lainnya..</option>
         </select>
 
         <label>Stok Buku</label>

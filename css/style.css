@@ -8,7 +8,7 @@
 body{
     background:#F8F1ED;
     color:#70576A;
-    min-height:100vh;
+    min-height:100vh; /* tinggi minimal 1 layar laptop */
 }
 
 /* NAVBAR */
@@ -98,7 +98,7 @@ main{
     padding:11px 15px;
     border:1px solid #E8D8EF;
     border-radius:10px;
-    outline:none;
+    outline:none;  /* hilangkan outline biru */
     background:white;
 }
 
@@ -158,7 +158,7 @@ tbody tr:hover{
 /* BUTTON AKSI */
 
 .aksi-btn{
-    display:flex;
+    display:flex; /*biar mudah diatur*/
     justify-content:center;
     gap:8px;
 }
