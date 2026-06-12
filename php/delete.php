@@ -3,6 +3,7 @@
 include 'koneksi.php';
 
 // mengambil nilai id dari URL
+
 $id = $_GET['id'];
 
 $query = mysqli_query(
